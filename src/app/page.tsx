@@ -10,7 +10,7 @@ export default function Home() {
           We Are Pet.
         </h1>
 
-        {/* Tombol Telepon (Muncul hanya di sm ke atas) */}
+        {/* Tombol Telepon (Hanya muncul di sm ke atas) */}
         <div className="text-sm sm:text-lg flex items-center bg-[#3051FF] text-white rounded-xl py-2 px-3">
           <FiPhone className="mr-2" /> +1 (671) 555-1234
         </div>
@@ -24,19 +24,18 @@ export default function Home() {
       </div>
 
       <div className="lg:flex justify-between">
-        {/* Bagian Kiri */}
+        {/* Bagian Kiri - Informasi Klinik */}
         <div className="flex flex-col lg:w-1/2">
           <div className="sm:flex items-center gap-2 mt-8">
-            {/* Gambar */}
+            {/* Gambar Kucing */}
             <img src="./cat.png" alt="cat" className="w-[290px] h-[340px]" />
 
-            {/* Text & Button dalam flex-col */}
+            {/* Deskripsi dan Tombol */}
             <div className="flex flex-col items-center md:items-start justify-center mx-2 gap-2">
               <p className="text-center md:text-left">
                 Our veterinary clinic is a compassionate and skilled facility
                 dedicated to providing high-quality medical care for pets.
               </p>
-
               <button className="bg-white text-primary rounded-xl flex items-center gap-2 pl-2 pr-1 py-1">
                 Services{" "}
                 <FiArrowUpRight
@@ -47,25 +46,27 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Alamat */}
+          {/* Alamat Klinik */}
           <div className="flex gap-2 items-center max-w-sm bg-[#3051FF] text-white rounded-xl py-2 px-3 mt-4">
             <FiMapPin />
             2715 Ash Dr. San Jose, South Dakota 83475
           </div>
         </div>
 
-        {/* Bagian Kanan */}
-        <div className="flex flex-col  lg:w-1/2">
+        {/* Bagian Kanan - Gambar Tambahan */}
+        <div className="flex flex-col lg:w-1/2">
           <div className="sm:flex items-center self-center lg:justify-end gap-2 mt-8">
-            {/* Gambar */}
+            {/* Gambar Anjing */}
             <img src="./dog.png" alt="dog" className="w-[290px] h-[340px]" />
-            <div className="sm:flex-col">
+
+            {/* Gambar Kucing & Tombol Reviews */}
+            <div className="flex flex-col items-center sm:items-start">
               <img
                 src="./cat1.png"
                 alt="cat1"
                 className="w-[233px] h-[272px] sm:-mt-25"
               />
-              <button className="bg-white text-primary rounded-xl flex items-center justify-start sm:justify-start gap-2 pl-2 pr-1 py-1 my-1">
+              <button className="bg-white text-primary rounded-xl flex items-center justify-center sm:justify-start gap-2 pl-2 pr-1 py-1 my-1">
                 Reviews{" "}
                 <FiArrowUpRight
                   className="bg-primary rounded-full"

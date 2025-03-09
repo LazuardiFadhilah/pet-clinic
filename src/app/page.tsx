@@ -55,17 +55,17 @@ export default function Home() {
         </div>
 
         {/* Bagian Kanan */}
-        <div className="flex flex-col lg:w-1/2">
-          <div className="sm:flex items-center lg:justify-end gap-2 mt-8">
+        <div className="flex flex-col  lg:w-1/2">
+          <div className="sm:flex items-center self-center lg:justify-end gap-2 mt-8">
             {/* Gambar */}
             <img src="./dog.png" alt="dog" className="w-[290px] h-[340px]" />
-            <div className="sm:flex-col justify-start">
+            <div className="sm:flex-col">
               <img
                 src="./cat1.png"
                 alt="cat1"
                 className="w-[233px] h-[272px] sm:-mt-25"
               />
-              <button className="bg-white text-primary rounded-xl flex items-center gap-2 pl-2 pr-1 py-1 my-1">
+              <button className="bg-white text-primary rounded-xl flex items-center justify-start sm:justify-start gap-2 pl-2 pr-1 py-1 my-1">
                 Reviews{" "}
                 <FiArrowUpRight
                   className="bg-primary rounded-full"

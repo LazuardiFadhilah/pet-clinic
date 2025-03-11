@@ -1,5 +1,6 @@
 import HeroSection from "./heroSection";
 import ServiceSection from "./serviceSection";
+import DoctorSection from "./doctorSection";
 import { FiArrowUpRight } from "react-icons/fi";
 
 export default function Home() {
@@ -7,48 +8,63 @@ export default function Home() {
     <>
       <HeroSection />
       <ServiceSection />
+      <DoctorSection />
       <section className="container mx-auto px-4 my-20">
-        <h1 className="font-semibold text-4xl lg:text-5xl lg:w-2/3">
-          Our doctors provide a wide range of services, from routine check-ups
+        <h1 className="font-semibold text-4xl lg:text-5xl lg:w-1/2">
+          Our doctors choose only the best equipment
         </h1>
-        <div className="grid grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 gap-0 my-10">
-          <div className="bg-[#3051FF] p-10 rounded-t-3xl lg:rounded-[0px] lg:rounded-l-3xl flex flex-col justify-between h-full">
-            <p>
-              Our veterinarians have completed extensive training and education
-              in veterinary medicine, including a Doctor of Veterinary Medicine
-              (DVM) degree from an accredited veterinary school.
-            </p>
 
-            <div className="flex justify-between items-end pt-[223px]">
-              {/* List Profesi */}
-              <ul className="space-y-2 font-bold">
-                <li>Surgeon</li>
-                <li>Dentist</li>
-                <li>Therapists</li>
-                <li>Ophthalmologists</li>
-              </ul>
-
-              {/* Button Free Call */}
-              <button className="flex items-center bg-white py-1 pr-[4px] pl-[32px] rounded-full text-primary">
-                Free Call
+        <div className="grid grid-cols-2 grid-rows-4 lg:grid-cols-4 lg:grid-rows-2 gap-4 my-[40px]">
+          <div className="col-span-2 flex flex-col justify-between py-4 px-6 bg-[#3051FF] rounded-2xl">
+            <div className="flex flex-row justify-between items-start">
+              <p className="font-light text-left text-lg lg:text-xl">
+                All our equipment has international quality certificates
+              </p>
+              <button>
                 <FiArrowUpRight
-                  className="bg-primary rounded-full p-1 ml-3 text-white"
-                  size={24}
+                  className="rounded-full bg-white text-primary p-2"
+                  size={40}
+                />
+              </button>
+            </div>
+            <div className="flex justify-end mt-[49px]">
+              <button className="text-secondary font-light text-lg lg:text-xl">
+                More About
+              </button>
+            </div>
+          </div>
+          <div className="row-start-2 lg:col-start-1 lg:row-start-2">
+            <div className="flex flex-col justify-between p-5 border-2 border-white rounded-2xl">
+              <p className="text-white font-light text-lg lg:text-xl text-left">
+                All equipment undergoes special treatment
+              </p>
+              <button className="self-end mt-4">
+                <FiArrowUpRight
+                  className="rounded-full bg-white text-primary p-2"
+                  size={40}
                 />
               </button>
             </div>
           </div>
-
-          {/* Gambar Dokter */}
-          <div className="relative bg-[url(/doctor.png)] bg-cover p-10 rounded-3xl -mt-[20px] lg:mt-0 lg:-ml-[20px] h-full">
-            {/* Button di kanan atas */}
-            <button className="absolute top-4 right-4 flex items-center bg-white py-1 pr-[4px] pl-[32px] mr-[25px] my-[25px] rounded-full text-primary shadow-md">
-              View All
-              <FiArrowUpRight
-                className="bg-primary rounded-full p-1 ml-3 text-white"
-                size={24}
-              />
-            </button>
+          <div className="row-start-2 lg:col-start-2 lg:row-start-2">
+            <div className="bg-[url(/equipment1.png)] bg-cover bg-center  rounded-2xl w-full h-full" />
+          </div>
+          <div className="col-span-2 row-start-3 lg:col-start-3 lg:row-start-1">
+            <div className="bg-[url(/equipment.png)] bg-cover  rounded-2xl w-full h-full" />
+          </div>
+          <div className="col-span-2 row-start-4 lg:row-start-2">
+            <div className="flex flex-col justify-between p-5 bg-[#3051FF] rounded-2xl h-full">
+              <p className="text-white font-light text-lg lg:text-xl">
+                Our clinic uses proven drugs and also provides them to our
+                clients
+              </p>
+              <button className="self-end mt-4">
+                <FiArrowUpRight
+                  className="rounded-full bg-white text-primary p-2"
+                  size={40}
+                />
+              </button>
+            </div>
           </div>
         </div>
       </section>

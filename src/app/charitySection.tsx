@@ -1,4 +1,5 @@
 import { FiArrowUpRight } from "react-icons/fi";
+import Image from "next/image";
 
 // Definisi tipe untuk properti komponen
 interface StatCardProps {
@@ -56,7 +57,7 @@ const StatCard: React.FC<StatCardProps> = ({ number, text }) => (
 const CharityCard: React.FC<CharityCardProps> = ({ name, image }) => (
   <div className="bg-lightPurple rounded-2xl p-4 flex flex-row items-center justify-center">
     <p className="text-lg lg:text-xl font-bold text-secondary mr-4">{name}</p>
-    <img src={image} alt={name} className="max-w-[64px]" />
+    <Image src={image} alt={name} className="max-w-[64px]" />
   </div>
 );
 

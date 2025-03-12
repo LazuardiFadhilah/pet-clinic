@@ -1,4 +1,5 @@
 import { FiArrowUpRight, FiMapPin, FiPhone } from "react-icons/fi";
+import Image from "next/image";
 
 export default function HeroSection() {
 
@@ -29,7 +30,7 @@ export default function HeroSection() {
           <div className="flex flex-col lg:w-1/2">
             <div className="sm:flex items-center gap-2 mt-8">
               {/* Gambar Kucing */}
-              <img src="./cat.png" alt="cat" className="w-[290px] h-[340px]" />
+              <Image src="./cat.png" alt="cat" className="w-[290px] h-[340px]" />
   
               {/* Deskripsi dan Tombol */}
               <div className="flex flex-col items-center md:items-start justify-center mx-2 gap-2">
@@ -58,11 +59,11 @@ export default function HeroSection() {
           <div className="flex flex-col lg:w-1/2">
             <div className="sm:flex items-center self-center lg:justify-end gap-2 mt-8">
               {/* Gambar Anjing */}
-              <img src="./dog.png" alt="dog" className="w-[290px] h-[340px]" />
+              <Image src="./dog.png" alt="dog" className="w-[290px] h-[340px]" />
   
               {/* Gambar Kucing & Tombol Reviews */}
               <div className="flex flex-col items-center sm:items-start">
-                <img
+                <Image
                   src="./cat1.png"
                   alt="cat1"
                   className="w-[233px] h-[272px] sm:-mt-25"

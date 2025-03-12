@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function ServiceSection() {
   return (
     <>
@@ -39,7 +41,7 @@ export default function ServiceSection() {
                 <div
                   className={`absolute inset-x-0 bottom-0 w-full h-[70%] ${item.bgColor} rounded-2xl z-0`}
                 ></div>
-                <img
+                <Image
                   src={item.imgSrc}
                   alt={item.title}
                   className="relative mx-auto w-[60%] lg:w-[80%] max-h-[200px] object-contain z-10"
@@ -96,7 +98,7 @@ export default function ServiceSection() {
                 <div
                   className={`absolute inset-x-0 bottom-0 w-full h-[70%] ${item.bgColor} rounded-2xl z-0`}
                 ></div>
-                <img
+                <Image
                   src={item.imgSrc}
                   alt={item.title}
                   className="relative mx-auto w-[60%] lg:w-[80%] max-h-[200px] object-contain z-10"

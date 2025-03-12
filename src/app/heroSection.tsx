@@ -30,7 +30,7 @@ export default function HeroSection() {
           <div className="flex flex-col lg:w-1/2">
             <div className="sm:flex items-center gap-2 mt-8">
               {/* Gambar Kucing */}
-              <Image src="./cat.png" alt="cat" className="w-[290px] h-[340px]" />
+              <Image src="/cat.png" alt="cat" width={290} height={340} />
   
               {/* Deskripsi dan Tombol */}
               <div className="flex flex-col items-center md:items-start justify-center mx-2 gap-2">
@@ -59,14 +59,16 @@ export default function HeroSection() {
           <div className="flex flex-col lg:w-1/2">
             <div className="sm:flex items-center self-center lg:justify-end gap-2 mt-8">
               {/* Gambar Anjing */}
-              <Image src="./dog.png" alt="dog" className="w-[290px] h-[340px]" />
+              <Image src="/dog.png" alt="dog" width={290} height={340}  />
   
               {/* Gambar Kucing & Tombol Reviews */}
               <div className="flex flex-col items-center sm:items-start">
                 <Image
-                  src="./cat1.png"
+                  src="/cat1.png"
                   alt="cat1"
-                  className="w-[233px] h-[272px] sm:-mt-25"
+                  width={233}
+                  height={272}
+                  className="sm:-mt-25"
                 />
                 <button className="bg-white text-primary rounded-xl flex items-center justify-center sm:justify-start gap-2 pl-2 pr-1 py-1 my-1">
                   Reviews{" "}

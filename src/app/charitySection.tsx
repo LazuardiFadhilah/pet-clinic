@@ -57,7 +57,9 @@ const StatCard: React.FC<StatCardProps> = ({ number, text }) => (
 const CharityCard: React.FC<CharityCardProps> = ({ name, image }) => (
   <div className="bg-lightPurple rounded-2xl p-4 flex flex-row items-center justify-center">
     <p className="text-lg lg:text-xl font-bold text-secondary mr-4">{name}</p>
-    <Image src={image} alt={name} className="max-w-[64px]" />
+    <div className="relative w-[64px] h-[64px]">
+  <Image src={image} alt={name} fill className="object-contain" />
+</div>
   </div>
 );
 

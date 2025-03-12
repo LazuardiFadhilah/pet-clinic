@@ -14,19 +14,19 @@ export default function ServiceSection() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-[21px]">
           {[
             {
-              imgSrc: "./dogServices.png",
+              imgSrc: "/dogServices.png",
               bgColor: "bg-[#F6F6F6]",
               title: "Dentistry for animals",
               desc: "Just like humans, animals can develop dental problems such as tooth decay, gum disease, and tooth loss.",
             },
             {
-              imgSrc: "./doctorServices.png",
+              imgSrc: "/doctorServices.png",
               bgColor: "bg-[#3051FF]",
               title: "Your pet's Documents",
               desc: "Animals do not require legal documents like humans do. However, some animals may need certain documents for specific purposes.",
             },
             {
-              imgSrc: "./dogServices1.png",
+              imgSrc: "/dogServices1.png",
               bgColor: "bg-[#F6F6F6]",
               title: "Vaccination",
               desc: "Vaccination for animals is the process of administering a vaccine to an animal to help prevent the spread of diseases.",
@@ -44,6 +44,9 @@ export default function ServiceSection() {
                 <Image
                   src={item.imgSrc}
                   alt={item.title}
+                  width={0}
+                  height={0}
+                  sizes="(max-width: 1024px) 60vw, 80vw"
                   className="relative mx-auto w-[60%] lg:w-[80%] max-h-[200px] object-contain z-10"
                 />
               </div>
@@ -71,19 +74,19 @@ export default function ServiceSection() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-[21px]">
           {[
             {
-              imgSrc: "./catServices.png",
+              imgSrc: "/catServices.png",
               bgColor: "bg-[#3051FF]",
               title: "Surgery for pets",
               desc: "Pet surgery refers to medical procedures performed on animals under anesthesia by a licensed veterinarian.",
             },
             {
-              imgSrc: "./dogServices2.png",
+              imgSrc: "/dogServices2.png",
               bgColor: "bg-[#F6F6F6]",
               title: "Consultation",
               desc: "The veterinarian may also perform diagnostic tests such as blood work, urinalysis, or x-rays to help diagnose any underlying health issues.",
             },
             {
-              imgSrc: "./catServices1.png",
+              imgSrc: "/catServices1.png",
               bgColor: "bg-[#3051FF]",
               title: "Caring for newborn",
               desc: "Animals do not require legal documents like humans do. However, some animals may need certain documents for specific purposes.",
@@ -101,6 +104,9 @@ export default function ServiceSection() {
                 <Image
                   src={item.imgSrc}
                   alt={item.title}
+                  width={0}
+                  height={0}
+                  sizes="(max-width: 1024px) 60vw, 80vw"
                   className="relative mx-auto w-[60%] lg:w-[80%] max-h-[200px] object-contain z-10"
                 />
               </div>

@@ -1,5 +1,4 @@
 import { FiArrowUpRight } from "react-icons/fi";
-import Image from "next/image";
 
 export default function ReviewSection() {
   return (

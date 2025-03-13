@@ -3,6 +3,7 @@ import ServiceSection from "./serviceSection";
 import DoctorSection from "./doctorSection";
 import EquipmentSection from "./equipmentSection";
 import CharitySection from "./charitySection";
+import ReviewSection from "./reviewSection";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <DoctorSection />
       <EquipmentSection />
       <CharitySection />
-
+      <ReviewSection />
     </>
   );
 }

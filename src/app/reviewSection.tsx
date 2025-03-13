@@ -72,10 +72,10 @@ export default function ReviewSection() {
       </div>
 
       {/* Tombol View All Reviews dengan gradient background */}
-      <div className="absolute flex items-center justify-center inset-0 bottom-20 z-10 bg-gradient-to-b from-transparent from-0% to-primary to-90%">
-        <div className="flex flex-row justify-center items-center bg-white rounded-full text-primary font-semibold text-lg lg:text-xl pl-8 py-2">
+      <div className="absolute flex items-end justify-center inset-0 bottom-20 z-10 bg-gradient-to-b from-transparent from-0% to-primary to-90%">
+        <div className="flex flex-row justify-center items-center bg-white rounded-full text-primary font-semibold text-lg lg:text-xl pl-8">
           View All Reviews
-          <FiArrowUpRight className="bg-primary text-white rounded-full ml-3 p-2" size={40} />
+          <FiArrowUpRight className="bg-primary text-white rounded-full ml-3 m-1 p-2" size={40} />
         </div>
       </div>
     </section>

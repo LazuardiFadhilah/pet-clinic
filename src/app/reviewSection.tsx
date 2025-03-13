@@ -1,4 +1,5 @@
 import { FiArrowUpRight } from "react-icons/fi";
+import Image from "next/image";
 
 export default function ReviewSection() {
   return (
@@ -13,7 +14,8 @@ export default function ReviewSection() {
         {/* Review 1 */}
         <div className="bg-white rounded-2xl p-7 flex flex-col">
           <div className="flex items-center justify-between">
-            <div className="rounded-full bg-[url(/avatar.png)] bg-cover bg-center w-10 h-10" />
+            <div className="rounded-full bg-[url(/Avatar.png)] bg-cover bg-center w-10 h-10" >
+            </div>
             <p className="text-black font-semibold text-lg lg:text-xl mr-auto p-2">
               Robert Kerry
             </p>
@@ -29,7 +31,7 @@ export default function ReviewSection() {
         {/* Review 2 */}
         <div className="row-start-2 mt-4 lg:mt-0 bg-white rounded-2xl p-7 lg:flex flex-col">
           <div className="flex items-center justify-between">
-            <div className="rounded-full bg-[url(/avatar1.png)] bg-cover bg-center w-10 h-10" />
+            <div className="rounded-full bg-[url(/Avatar1.png)] bg-cover bg-center w-10 h-10" />
             <p className="text-black font-semibold text-lg lg:text-xl mr-auto p-2">Fioni</p>
             <p className="text-gray-600 font-light text-lg lg:text-xl">13.05.2025</p>
           </div>
@@ -44,7 +46,7 @@ export default function ReviewSection() {
         {/* Review 3 (Hidden on mobile) */}
         <div className="hidden bg-white rounded-2xl p-7 lg:flex flex-col">
           <div className="flex items-center justify-between">
-            <div className="rounded-full bg-[url(/avatar2.png)] bg-cover bg-center w-10 h-10" />
+            <div className="rounded-full bg-[url(/Avatar2.png)] bg-cover bg-center w-10 h-10" />
             <p className="text-black font-semibold text-lg lg:text-xl mr-auto p-2">Charles</p>
             <p className="text-gray-600 font-light text-lg lg:text-xl">13.05.2025</p>
           </div>
@@ -59,7 +61,7 @@ export default function ReviewSection() {
         {/* Review 4 (Hidden on mobile) */}
         <div className="hidden bg-white rounded-2xl p-7 lg:flex flex-col">
           <div className="flex items-center justify-between">
-            <div className="rounded-full bg-[url(/avatar3.png)] bg-cover bg-center w-10 h-10" />
+            <div className="rounded-full bg-[url(/Avatar3.png)] bg-cover bg-center w-10 h-10" />
             <p className="text-black font-semibold text-lg lg:text-xl mr-auto p-2">Arthur Dill</p>
             <p className="text-gray-600 font-light text-lg lg:text-xl">13.05.2025</p>
           </div>

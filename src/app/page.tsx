@@ -4,6 +4,8 @@ import DoctorSection from "./doctorSection";
 import EquipmentSection from "./equipmentSection";
 import CharitySection from "./charitySection";
 import ReviewSection from "./reviewSection";
+import AppointmentSection from "./appointmentSection";
+import { FiArrowUpRight } from "react-icons/fi";
 
 export default function Home() {
   return (
@@ -14,6 +16,7 @@ export default function Home() {
       <EquipmentSection />
       <CharitySection />
       <ReviewSection />
+      <AppointmentSection />
     </>
   );
 }

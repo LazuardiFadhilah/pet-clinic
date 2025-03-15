@@ -4,11 +4,12 @@ import { FaInstagram } from "react-icons/fa";
 export default function Footer() {
   return (
     // Section utama footer
+    <>
     <section className="container mx-auto py-20">
       <div className="flex flex-col items-center justify-center">
         
         {/* Heading utama footer */}
-        <h1 className="text-4xl lg:text-5xl font-semibold flex">
+        <h1 className="text-4xl lg:text-5xl text-center font-semibold flex">
           Always happy to help your friend
         </h1>
         
@@ -18,9 +19,9 @@ export default function Footer() {
         </button>
 
         {/* Grid untuk informasi footer */}
-        <div className="grid grid-cols-6 gap-4 w-full max-w-[800px] mt-20">
+        <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 w-full max-w-[800px] mt-20">
           {/* Kolom About Us */}
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center color-lightPurple gap-4">
             <h1 className="text-lg font-bold">About Us</h1>
             <ul className="text-lg text-center font-light">
               <li>Address</li>
@@ -82,12 +83,12 @@ export default function Footer() {
         </div>
 
         {/* Bagian bawah footer */}
-        <div className="flex flex-row items-center justify-between w-full mt-10 p-10 border-t-2 border-secondary">
+        <div className="flex flex-col gap-4 lg:flex-row items-center justify-between w-full mt-10 p-10 border-t-2 border-secondary">
           
           {/* Copyright */}
           <div className="flex flex-row items-center gap-2">
             <FaRegCopyright size={20} />
-            <p className="text-[16px] font-light">
+            <p className="text-[12px] lg:text-[16px] font-light">
               Copywriting | All Rights Reserved
             </p>
           </div>
@@ -102,12 +103,12 @@ export default function Footer() {
 
           {/* Terms & Privacy */}
           <div className="flex flex-row items-center gap-2">
-            <p className="text-[16px] font-light">
+            <p className="text-[12px] lg:text-[16px] font-light">
               Term of Use | Privacy
             </p>
           </div>
         </div>
       </div>
-    </section>
+    </section></>
   );
 }
